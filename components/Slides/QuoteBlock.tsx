@@ -10,10 +10,11 @@ interface Props {
   quote: string
   author?: string
   className?: string
+  description?: string
 }
 
-const QuoteBlock: React.FC<Props> = ({ quote, author, className }) => {
-  const { ref, controls, variants } = useFadeUp()
+const QuoteBlock: React.FC<Props> = ({ quote, author, description, className }) => {
+  const { ref, controls, variants } = useFadeUp();
 
   return (
     <div ref={ref} className={classNames("", className)}>
@@ -29,7 +30,7 @@ const QuoteBlock: React.FC<Props> = ({ quote, author, className }) => {
           >
             {quote}
           </motion.h1>
-          {author !== undefined && (
+          {author && (
             <motion.p
               initial="hidden"
               animate={controls}
@@ -40,10 +41,21 @@ const QuoteBlock: React.FC<Props> = ({ quote, author, className }) => {
               - {author}
             </motion.p>
           )}
+          {description && (
+            <motion.p
+              initial="hidden"
+              animate={controls}
+              variants={variants}
+              transition={{ delay: 0.2, duration: 0.4, type: "spring" }}
+              className="mt-5 text-xl leading-relaxed text-gray-700"
+            >
+              {description}
+            </motion.p>
+          )}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default QuoteBlock
