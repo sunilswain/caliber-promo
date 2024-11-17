@@ -43,14 +43,14 @@ const slides: React.ReactNode[] = [
         title: "Co-Founder @ Tactile Group",
         url: "linkedin.com/in/sunil-swain",
         avatar:
-          "https://media.licdn.com/dms/image/v2/D5603AQGJqgySBiPWEg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1708347476124?e=1736985600&v=beta&t=CB9ZU2bjKAa1ZVWnp8NaM-Z6TcKNI5bMvOaWfKU8tOg",
+          "avatar/sunil.jpg",
       },
       {
         name: "G Vasanth Kumar",
         title: "Co-Founder @ Tactile Group",
         url: "linkedin.com/in/ganta-vasanth-kumar-083113232/",
         avatar:
-          "https://media.licdn.com/dms/image/v2/D4D03AQFbHV4hupSAYw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1711987033070?e=1736985600&v=beta&t=NQBeGVaibgW4jqYvnCsjJDnvIhvP-tVlh-wOYGY4Y0M",
+          "avatar/vasanth.jpg",
       },
     ]}
     className="w-[720px]"
@@ -82,7 +82,7 @@ const slides: React.ReactNode[] = [
   />,
   <SingleImage
     key="single-image-6"
-    image="slides/howitWorks_6.svg"
+    image="slides/howItWorks_6.svg"
     className="w-[1020px]"
   />,
   <SingleImage
