@@ -26,14 +26,14 @@ const slides: React.ReactNode[] = [
     key="cover"
     title="Welcome To Caliber"
     subtitle="Let's get started!"
-    className="w-[720px]"
+    className="max-w-[720px] px-3 md:px-0"
   />,
   <QuoteBlock
     key="quote"
     quote="The best way to find yourself is to lose yourself in the service of others."
     author="Mahatma Gandhi"
     description="Caliber aims to empower rural informal workers with reliable opportunities while delivering quality services and fostering mutual growth."
-    className="w-[720px]"
+    className="max-w-[720px] px-3 md:px-0"
   />,
   <Profile
     key="profile"
@@ -53,64 +53,64 @@ const slides: React.ReactNode[] = [
           "avatar/vasanth.jpg",
       },
     ]}
-    className="w-[720px]"
+    className="max-w-[720px] px-3 md:px-0"
   />,
   <SingleImage
     key="single-image-1"
-    image="slides/Caliber_1.svg"
-    className="w-[1020px]"
+    image="slides/caliber_1.jpg"
+    className="w-full px-3 max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-2"
-    image="slides/theProblem_2.svg"
-    className="w-[1020px]"
+    image="slides/theProblem_2.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-3"
-    image="slides/challengeInTheMarket_3.svg"
-    className="w-[1020px]"
+    image="slides/challengeInTheMarket_3.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-4"
-    image="slides/theSolution_4.svg"
-    className="w-[1020px]"
+    image="slides/theSolution_4.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-imag-5"
-    image="slides/introToCaliber_5.svg"
-    className="w-[1020px]"
+    image="slides/introToCaliber_5.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-6"
-    image="slides/howItWorks_6.svg"
-    className="w-[1020px]"
+    image="slides/howItWorks_6.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-7"
-    image="slides/stepByStepWorkflow_7.svg"
-    className="w-[1020px]"
+    image="slides/stepByStepWorkflow_7.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-8"
-    image="slides/keyBenefits_8.svg"
-    className="w-[1020px]"
+    image="slides/keyBenefits_8.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-9"
-    image="slides/impactOnSociety_9.svg"
-    className="w-[1020px]"
+    image="slides/impactOnSociety_9.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   <SingleImage
     key="single-image-10"
-    image="slides/thanks_10.svg"
-    className="w-[1020px]"
+    image="slides/thanks_10.jpg"
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
   
   // <Points
   //   key="points"
   //   title="2 hard problems in computer science"
   //   points={["Cache invalidation", "Naming things", "off-by-1 errors"]}
-  //   className="w-[720px]"
+  //   className="max-w-[720px] px-3 md:px-0"
   // />,
   // <MultiImage
   //   key="multi-image"
@@ -118,7 +118,7 @@ const slides: React.ReactNode[] = [
   //     "https://images.unsplash.com/photo-1607706009771-de8808640bcf?q=80&w=1087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   //     "https://images.unsplash.com/photo-1510751007277-36932aac9ebd?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   //   ]}
-  //   className="w-[720px]"
+  //   className="max-w-[720px] px-3 md:px-0"
   // />,
   // <CodeBlock
   //   key="code"
@@ -156,16 +156,16 @@ const slides: React.ReactNode[] = [
 
   //       export default Counter;
   //       `}
-  //   className="w-[720px]"
+  //   className="max-w-[720px] px-3 md:px-0"
   // />,
   // <Counter key="counter" />, // INFO: Demo component
   // <About
   //   key="about"
   //   title="Jitendra Nirnejak"
   //   subtitle="Designer and Developer"
-  //   className="w-[720px]"
+  //   className="max-w-[720px] px-3 md:px-0"
   // />,
-  <End key="end" username="caliber.tactilegroup" />,
+  <End key="end" username="caliber.tactilegroup" className="max-w-[680px] px-3 md:px-0" />,
 ]
 
 const Home: React.FC = () => {
