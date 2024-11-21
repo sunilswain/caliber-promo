@@ -10,6 +10,7 @@ import Cover from "components/Slides/Cover"
 import End from "components/Slides/End"
 import MultiImage from "components/Slides/MultiImage"
 import Points from "components/Slides/Points"
+import Audio from "components/Slides/Audio"
 import Profile from "components/Slides/Profile"
 import QuoteBlock from "components/Slides/QuoteBlock"
 import SingleImage from "components/Slides/SingleImage"
@@ -105,7 +106,13 @@ const slides: React.ReactNode[] = [
     image="slides/thanks_10.jpg"
     className="w-full px-3 md:max-w-[1020px] md:px-0"
   />,
-  
+  // Audio format here
+  <Audio
+    key="audio"
+    embedSrc="https://open.spotify.com/embed/episode/4wXNAWF4uE8Xa6jaDFlTQu?utm_source=generator"
+    audioFile="caliberEpisode1.wav" // Replace with your audio file path
+    className="w-full px-3 md:max-w-[1020px] md:px-0"
+  />,
   // <Points
   //   key="points"
   //   title="2 hard problems in computer science"
